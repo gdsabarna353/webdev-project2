@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class = "column1">
+        <div class="header" id="myHeader">
+          <header >HTML DOCUMENTATION</header>
+        </div>
+        <div class="column1 content">
+        <ul >
+          <li ><a href="#introduction">Introduction</a></li>
+          <li><a href="#basic_html_structure">Basic HTML Structure</a></li>
+          <li><a href="#creating_first_html_page">Creating First HTML Page</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
+          <li><a href="#text_formatting">Text Formatting</a></li>
+          <li><a href="#heading_lines_comments">Heading, Lines, Comments</a></li>
+          <li><a href="#elements">Elements</a></li>
+          <li><a href="#attributes">Attributes</a></li>
+          <li><a href="#header">Header</a></li>
+          <li><a href="#article_section_aside">Article, Section and Aside</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#Class and Id">Class and Id</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#iframes">Iframes</a></li>
+          <li><a href="#footer">Footer</a></li>
+          <li><a href="#referrence">Referrence</a></li>
+        </ul>
+      </div>
+    </div>
+      <div class = "column2">
+        <div id="introduction"></div>
+        <h4 id="introduction">Introduction</h4>
+        <p>HTML stands for Hyper Text Markup Language, which is most widely used language on web to develop web pages. HTML was created by Berners-Lee in late 1991. The first standard HTML specification was HTML 2.0, published in 1995.<br><br>The ability to code using HTML is essential for any web professional. HTML tags provide semantic meaning  and machine-readability to the content in the page. A HTML page may consist of potentially hundreds of elements which are then read by a web browser, interpreted and rendered into human readable or audible content in the screen.</p>
+        <div id="basic_html_structure"></div>
+        <h4 id="basic_html_structure">Basic HTML Structure</h4>
+        <p>The structure of an HTML document has been compared with that of a sandwitch. As a sandwitch has two slices of bread, the HTML document has opening and closing HTML tags. These tags look like as follows:<br><br> &lt;html&gt;....&lt;/html&gt;<br><br>Immediately following the opening HTML tag, the head of the document is found which is identified by opening and closing head tags. Head tags contain all the non-visual elements that help make the page work. These tags look like as follows:<br><br>&lt;html&gt;<br>&lt;head&gt;....&lt;/head&gt;<br>&lt;/html&gt;<br><br>The body tag follows the head tag and contains all the visual structural elements like paragraphs, headings, lists, quotes, images, links etc. Body tag defines the main content of the HTML document. These tags look like as follows:<br><br>&lt;html&gt;<br>&lt;head&gt;....&lt;/head&gt;<br>&lt;body&gt;....&lt;/body&gt;<br>&lt;/html&gt;<br></p>
+        <div id="creating_first_html_page"></div>
+        <h4 id="creating_first_html_page">Creating First HTML Page</h4>
+        <p>For creating your first web page, you have to create a HTML file at first. HTML files are basically text files, so these files can be easily created using the text editors(e.g. using Notepad). Let us take an example for displaying this line "This is my first web page" in the web browser. For doing that, you need to add the basic HTML structure in your text file which we have disscussed in the previous section. Lets see.<br><br>&lt;html&gt;<br>&lt;head&gt;....&lt;/head&gt;<br>&lt;body&gt;This is my first web page.&lt;/body&gt;<br>&lt;/html&gt;<br><br>Now after creating these in your text file, the file should be named as "filename.html". When you will open the file, the text will be displayed on your web browser. Now you can add a title for describing your web page using a "title" element in your head section which looks like as follows:<br><br>&lt;head&gt;<br>&lt;title&gt;name of the web page&lt;/title&gt;<br>&lt;/head&gt;<br><br>By doing this, the title of the web page will be displayed on the tab of your web page. The 'title' element is important because it describes your web page and is used by search engines.<br><br>Congratulations, you have created your first web page successfully.<br></p>
+        <div id="paragraphs"></div>
+        <h4 id="paragraphs">Paragraphs</h4>
+        <p>For creating a paragraph, simply type in the &lt;p&gt; element with its opening and closing tags. Browsers automatically add an empty line before and after a paragraph. The 'paragraph' tags looks like,<br><br>&lt;body&gt;<br>&lt;p&gt;.......&lt;/p&gt;<br>&lt;/body&gt;<br><br>For a single line break in your paragraph, you can use &lt;br /&gt; tag. This element has no end tag. <br></p>
+        <div id="text_formatting"></div>
+        <h4 id="text_formatting">Text Formatting</h4>
+        <p>In HTML, there is a list of elements that specify text style. These are called 'Formatting Elements' or 'Formatting Tags' which are designed to display special types of texts.<br><br>The formatting tags are divided into two categories:<ol>
+          <li><b>Physical Tags: </b>These tags are used to provide the visual appearance to the text.</li>
+          <li><b>Logical Tags: </b>These tags are used to add some logical or semantic value to the text.</li>
+        </ol></p><p>Now, we learn some HTML formatting tags which are used for text formatting.<br>
+      <ul >
+        <li><b>&lt;b&gt;: </b>This is a physical tag, which is used to bold the text written between it.</li>
+        <li><b>&lt;strong&gt;: </b>This is a logical tag, which tells the browser that the text is important.</li>
+        <li><b>&lt;i&gt;: </b>This is a physical tag which is used to make text italic.</li>
+        <li><b>&lt;em&gt;: </b>This is a logical tag which is used to display content in italic.</li>
+        <li><b>&lt;mark&gt;: </b>This tag is used to highlight text.</li>
+        <li><b>&lt;u&gt;: </b>This tag is used to highlight text.</li>
+        <li><b>&lt;tt&gt;: </b>This tag is used to appear a text in teletype. (not supported in HTML5)</li>
+        <li><b>&lt;strike&gt;: </b>This tag is used to draw a strikethrough on a section of text. (Not supported in HTML5)</li>
+        <li><b>&lt;sup&gt;: </b>It displays the content slightly above the normal line.</li>
+        <li><b>&lt;sub&gt;: </b>It displays the content slightly below the normal line.</li>
+        <li><b>&lt;del&gt;: </b>This tag is used to display the deleted content.</li>
+        <li><b>&lt;ins&gt;: </b>This tag displays the content which is added</li>
+        <li><b>&lt;big&gt;: </b>This tag is used to increase the font size by one conventional unit.</li>
+        <li><b>&lt;small&gt;: </b>This tag is used to decrease the font size by one unit from base font size.</li>
+      </ul></p><p>All these formatting tags are used to format the text by enclosing the text within their opening and closing tags.<br></p>
+        <div id="heading_lines_comments"></div>
+        <h4 id="heading_lines_comments">Heading, Lines, Comments</h4>
+        <ul>
+          <li><b>Headings:</b><br><br>HTML includes six levels of headings. According to the importance, they are ranked as,<br>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;. <br><br> Search engines use headings to index the web page structure and content.</li><br>
+          <li><b>Horizontal Lines:</b><br><br>&lt;hr /&gt; tag is used for creating a horizontal line. This tag defines a thematic break between two paragraphs when it is needed.</li><br>
+          <li><b>Comments:</b><br><br>Comments are mostly used to make a code readable. The browser doesn't display comments but they help document the HTML and add descriptions, remainders and other notes. 'Comments' tag looks like as follows:<br>&lt;!-- Write the Comment --&gt;</li>
+        </ul>
+        <div id="elements"></div>
+        <h4 id="elements">Elements</h4>
+        <p>HTML documents are made up of HTML elements. An HTML element is written using a start tag (&lt;tag name&gt;) and an end tag (&lt;/tagname&gt;) and with the content in between. Some HTML elements do not have end tags or closing tags (e.g. &lt;br /&gt; tag, &lt;hr /&gt; tag, because we can't put any content inside these tags. For this reason, they are called "Void Elements"). <br><br> HTML documents mainly consist of nested HTML elements that means one HTML element is nested within another HTML element. For example, we include 'paragraph' tags inside the body elements which is an example of Nested Element. So HTML is really scripting with elements within elements.<br><br>For the default display and styling purpose in HTML, all the elements are divided into two categories:</p>
+        <ul>
+          <li><b>Inline Elements: </b><br><br>Inline elements are normally displayed without line breaks. These elements can differentiate the part of a given text and provide it a particular function. These elements does not start with new line and take width as per requirement.<br><br>For example, &lt;b&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;input&gt;, &lt;em&gt;, &lt;span&gt; etc.</li>
+          <li><b>Block-Level Elements: </b><br><br>Block-level elements always start from a new line. These elements structure the main part of web page, by dividing a page into coherent blocks and take the full width of web page, from left to right.<br><br>&lt;h1&gt;, &lt;form&gt;, &lt;li&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;table&gt;, &lt;div&gt; etc.</li>
+        </ul>
+        <div id="attributes"></div>
+        <h4 id="attributes">Attributes</h4>
+        <p>Attributes are used to provide additional information about an element or a tag, while also modifying them. Most attributes have a value; the value modifies the attribute. Attributes are always specified in the start tag and they appear in name="value" pairs. The syntax to define an attribute looks like as follows,<br><br>&lt;element attribute_name="value"&gt; content &lt;/element&gt; <br>For example,<br><br>&lt;p align="right"&gt;Write some texts&lt;/p&gt;<br><br>In the above syntax, 'align' attribute is used to specify how the text is aligned and here the value is set to 'right' to align the text to the right. 'height', 'width', 'style', 'title', 'src' etc there are a lot of examples of attributes.<br><br> </p>
+        <div id="header"></div>
+        <h4 id="header">Header</h4>
+        <p>In HTML5, a simple &lt;header&gt; tag is used with its opening and closing tags to give a heading of a section or an article or any paragraph. This element is used inside the &lt;body&gt; tag. It should be remembered that the &lt;head&gt; tag is completely different from &lt;header&gt; tag.</p>
+        <div id="article_section_aside"></div>
+        <h4 id="article_section_aside">Article, Section and Aside</h4>
+        <p>Article is a self-contained, independent piece of content that can be used and distributed separately from the rest of the page or site. This could be a forum post, a magazine or newspaper article, a blog entry, a comment, an interactive widget or gadget, or any other independent piece of content. Syntax looks like as follows, <br><br>&lt;article&gt;....&lt;/article&gt;<br><br>&lt;section&gt;is a logical container of the page or article. Sections can be used to divide up content within an article. For example, a homepage could have a section for introducing the company, another for news items, and still another for contact information. Syntax looks like as follows,<br><br>&lt;article&gt;<br>&lt;section&gt;....&lt;/section&gt;<br>&lt;/article&gt;<br><br>&lt;aside&gt; is secondary or tangential content which could be considered separate from but indirectly related to the main content. This type of content is often represented in sidebars. When an &lt;aside&gt; tag is used within an &lt;article&gt; tag, the content of the &lt;aside&gt; should be specifically related to that article.Syntax looks like as follows,<br><br>&lt;article&gt;<br>&lt;aside&gt;....&lt;/aside&gt;<br>&lt;/article&gt;<br></p>
+        <div id="navigation"></div>
+        <h4 id="navigation">Navigation</h4>
+        <p>The &lt;nav&gt; element represents a section of a page that links to other pages or to certain sections within the page. This would be a section with navigation links. The &lt;nav&&gt; element is intended only for major blocks of navigation links. Examples of some navigation links are menu, table of contents, indexes, etc. Syntax looks like as follows, <br><br>&lt;nav&gt;....&lt;/nav&gt;<br></p>
+        <div id="images"></div>
+        <h4 id="images">Images</h4>
+        <p>HTML img tag is used to display image on the web page. HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML image element. Syntax looks like as follows,<br><br>&lt;img src="image.jpg" /&gt;<br><br>There are some attributes which are used for HTML image tag which are as follows:</p>
+        <ul>
+          <li><b>src: </b>It instructs the browser where to look for the image on the server.</li>
+          <li><b>alt: </b>This attribute defines an alternate text for the image, if it can't be displayed.</li>
+          <li><b>height: </b>This attribute is used to specify the height to display the image.</li>
+          <li><b>width: </b>This attribute is used to specify the width to display the image.</li>
+        </ul>
+        <div id="audio"></div>
+        <h4 id="audio">Audio</h4>
+        <p>The HTML5 &lt;audio&gt; element specifies a standard for embedding audio in a web page. Audio source file's URL can be specified by two different ways.<br><br>First one is using the source attribute. Syntax looks like as follows,<br><br>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;<br><br>The second one is using &lt;source&gt; element inside the &lt;/audio&gt; element. The syntax looks like as follows,<br><br>&lt;audio controls&gt;<br>&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>&lt;source src="audio.ogg" type="audio/ogg"&gt;<br>&lt;/audio&gt;<br<br> This &lt;audio&gt; element creates an audio player inside the web browser. It also uses some attributes like,
+        <ul>
+          <li><b>Controls: </b>It specifies that audio controls should be displayed (such as play/pause button etc).</li>
+          <li><b>Controls: </b>It specifies that the audio starts playing as soon as it is ready, without asking for the visitor's permission.</li>
+          <li><b>Controls: </b>This attribute is used to have the audio replay everytime it is finished.</li>
+        </ul><p>Currently, there are three supported file formats which are MP3, WAV and OGG.<br></p>
+        <div id="video"></div>
+        <h4 id="video">Video</h4>
+        <p>The &lt;video&gt; element is also similar to the &lt;audio&gt; element. Video source URL can be specified using an attribute in a video element, or using source elements inside the video element. Syntax looks like as follows:<br><br>&lt;video controls&gt;<br>&lt;source src="video.mp4" type="video/mp4"&gt;<br>&lt;source src="video.ogg" type="video/ogg"&gt;<br>&lt;/video&gt;<br<br> This &lt;video&gt; element has also three attributes similar to &lt;audio&gt; element which are 'controls', 'autoplay' and 'loop'. The supported video formats are MP4, WebM and OGG.<br></p>
+        <div id="links"></div>
+        <h4 id="links">Links</h4>
+        <p>The HTML anchor tag defines a hyperlink that links one page to another page. It can create hyperlink to other web page as well as files, location, or any URL. The "href" attribute is the most important attribute of the HTML &lt;a&gt; tag and it links to the destination page or URL. Syntax looks like as follows,<br><br>&lt;a href = "..........."&gt; Link Text &lt;/a&gt;<br><br>Links can either be absolute or relative. Here we can use 'target' attribute of &lt;a&gt; tag which specifies where to open the linked document. Giving a '_blank' value to the 'target' attribute will open the link in a new window or a new tab.<br><br></p>
+        <div id="lists"></div>
+        <h4 id="lists">Lists</h4>
+        <p>HTML Lists are used to specify lists of information. There are two different types of HTML lists. They are Ordered List and Unordered List. <br><br><b>Ordered Lists: </b><br><br>In the ordered HTML lists, all the list items are marked with numbers by default. The ordered list starts with &lt;ol&gt; tag and the list items start with &lt;li&gt; tag.<br><br><b>Unordered List: </b><br><br>In the unordered HTML lists, all the list items are marked with bullets. The unordered list starts with &lt;ul&gt; tag and the list items start with &lt;li&gt; tag.<br></p>
+        <div id="tables"></div>
+        <h4 id="tables">Tables</h4>
+        <p>HTML table tag is used to display data in tabular form (row * column). There can be many columns in a row. We can create a table to display data in tabular form, using &lt;table&gt; element, with the help of &lt;tr&gt; , &lt;td&gt;, and &lt;th&gt; elements. In Each table, table row is defined by &lt;tr&gt; tag, table header is defined by &lt;th&gt;, and table data is defined by &lt;td&gt; tags. HTML tables are used to manage the layout of the page e.g. header section, navigation bar, body content, footer section etc. But it is recommended to use div tag over table to manage the layout of the page.<br><br></p>
+        <div id="Class and Id"></div>
+        <h4 id="Class and Id">Class and Id</h4>
+        <p><b>HTML Class: </b><br><br>The HTML Class attribute is used to specify a single or multiple class names for an HTML element. A class attribute can be defined within &lt;style&gt; tag or in separate file using the (.) character. Now for defining an HTML class, firstly define style for HTML class using &lt;style&gt; tag within &lt;head&gt; section. Syntax looks like as follows,<br><br>&lt;head&gt;<br>&lt;style&gt;<br>.classname{<br>....<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br><br>Now, we can use this class name with any of HTML element in which we want to provide such styling. Syntax looks like as follows,<br><br>&lt;tagname class="classname"&gt; content &lt;/tagname&gt;<br><br>
+        <b>HTML Id: </b><br><br>HTML Id attribute is also similar as the 'Class' attribute. The only basic difference is that 'Id' attribute  is used to specify the unique ID for an element of the HTML document whereas 'Class' attribute can apply to multiple elements. The basic syntax for 'Id' attribute looks like as follows,<br><br>&lt;tagname id="value"&gt;<br> </p>
+        <div id="forms"></div>
+        <h4 id="forms">Forms</h4>
+        <p>An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. It facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc. The syntax looks like as follows, <br><br>&lt;form action="server url" method="get|post"&gt;&lt;/form&gt; There are some HTML5 form tags which are as follows:</p>
+        <ul>
+          <li><b>&lt;form&gt;</b>It defines an HTML form to enter inputs by the user side.</li>
+          <li><b>&lt;input&gt;</b>It defines an input control.</li>
+          <li><b>&lt;label&gt;</b>It defines a label for an input element.</li>
+          <li><b>&lt;option&gt;</b>It defines an option in a drop-down list.</li>
+          <li><b>&lt;button&gt;</b>It defines a clickable button.</li>
+          <li><b>&lt;select&gt;</b>It defines a drop-down list.</li>
+          <li><b>&lt;output&gt;</b>It defines the result of a calculation.</li>
+          <li><b>&lt;textarea&gt;</b>It defines a multi-line input control.</li>
+          <li><b>&lt;legend&gt;</b>It defines a caption for a &lt;fieldset&gt; element.</li>
+          <li><b>&lt;fieldset&gt;</b>It groups the related element in a form.</li>
+          <li><b>&lt;optgroup&gt;</b>It defines a group of related options in a drop-down list.</li>
+          <li><b>&lt;datalist&gt;</b>It specifies a list of pre-defined options for input control.</li>
+          <li><b>&lt;keygen&gt;</b>It defines a key-pair generator field for forms.</li>
+        </ul>
+        <div id="colors"></div>
+        <h4 id="colors">Colors</h4>
+        <p>HTML colors are expressed as hexadecimal values (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). Zero represents the lowest value and F represents the highest value. Colors are displayed in the combinations of red, green and blue light (RGB). <br><br> Hex values are written using the hashtag symbol(#), followed by either three or six hex characters. For example, <br>
+        <ul>
+          <li><b>Green</b> color is specified by the symbol <b>#00FF00</b></li>
+          <li><b>Blue</b> color is specified by the symbol <b>#0000FF</b></li>
+          <li><b>Red</b> color is specified by the symbol <b>#FF0000</b></li>
+          <li><b>White</b> color is specified by the symbol <b>#FFFFFF</b></li>
+          <li><b>Black</b> color is specified by the symbol <b>#000000</b></li>
+          <li><b>Gray</b> color is specified by the symbol <b>#777777</b></li>
+        </ul><p>The color attribute specifies the color of the text inside a &lt;font&gt; element. The <b>bgcolor</b> attribute is used to change the background color of the web page.</p>
+        <div id="iframes"></div>
+        <h4 id="iframes">Iframes</h4>
+        <p>HTML Iframe is used to display a nested webpage (a webpage within a webpage). The HTML &lt;iframe&gt; tag defines an inline frame, hence it is also called as an Inline frame. An HTML iframe embeds another document within the current HTML document in the rectangular region. The syntax looks like as follows, <br><br>&lt;iframe src="URL"&gt;&lt;/iframe&gt;<br><br>Here, "src" attribute specifies the web address (URL) of the inline frame page. A target frame can also be set for a link by using iframe. The specified target attribute of the link must refer to the name attribute of the iframe.<br><br></p>
+        <div id="footer"></div>
+        <h4 id="footer">Footer</h4>
+        <p>HTML &lt;footer&gt; tag is used to define a footer for a document or a section. This tag contains information about its containing elements like author information, contact information, copyright information, sitemap, privacy policy, related documents etc. The syntax looks like as follows:<br><br>&lt;footer&gt;...&lt;/footer&gt;<br></p>
+        <div id="referrence"></div>
+        <h4 id="referrence">Referrence</h4>
+        <p>For more read about HTML tutorial you can follow <a href="https://www.w3schools.com/html/">w3schools referrence</a>.</p>
+   
+      </div>
+  
+    </div>
+  </body>
+
+</html>
